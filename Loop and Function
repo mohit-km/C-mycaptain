@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+int a;
+printf("type a number: ");
+scanf("%d",&a);
+int i,sum=0;
+do{
+	sum+=a%10;
+	a=a/10;
+}while(a>0);
+printf("the sum of all digit of a number = %d",sum);
+return 0;
+}
