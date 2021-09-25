@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+int a,b,c;
+printf("provide values of a and b \n");
+scanf("%d%d",&a,&b);
+printf("provided values are \na=%d \nb=%d \n",a,b);
+printf("values after swapping are\n");
+c=b;
+b=a;
+a=c;
+printf("a= %d\n",c);
+printf("b= %d",a);
+return 0;
+}
