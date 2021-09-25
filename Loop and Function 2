@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+int a,i,num=0;
+printf("provide a positive integer value for a : ");
+scanf("%d",&a);
+for(i=2;i<a;i++){
+    if(a%i==0){
+    num++;
+	}
+  }
+  if(a==1)
+  {
+  	printf("1 is neither a prime number nor a composite number");
+  }
+  else{
+  	if (num==0){
+  		printf("%d is a prime number",a);
+	  }
+	  else{
+	  	printf("%d is not a prime number",a);
+	  }
+  }
+}
