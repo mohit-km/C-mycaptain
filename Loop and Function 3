@@ -1,0 +1,20 @@
+#include <stdio.h>
+ int lcm(int p, int q){
+	static int common = 1;
+   if (common % p == 0 && common % q == 0)
+    {
+        return common;
+    }
+    common++;
+    lcm(p, q);
+    return common;
+}
+int main()
+{
+    int a, b, result;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+    result = lcm(a, b);
+    printf("The LCM of %d and %d is %d\n", a, b, result);
+    return 0;
+}
